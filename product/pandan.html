@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>product-pandan</title>
+   <title>Product</title>
+   <link rel="stylesheet" href="/css/product.css">
 </head>
+
 <body>
-   
+   <section>
+      <div class="container flex">
+         <div class="left">
+            <div class="main_image">
+               <img src="/asset/products/kemasan-pandan.png" alt="" class="slide">
+            </div>
+            <div class="option flex">
+               <img src="/asset/products/kemasan-pandan.png" onclick="img('/asset/products/kemasan-pandan.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+            </div>
+         </div>
+         <div class="right">
+            <h3>This Is Heading</h3>
+            <h4>Rp100.000</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vitae magnam molestias perferendis
+               numquam magni asperiores sequi amet, minima, veritatis sed illo laudantium dicta omnis maiores.
+               Inventore ea voluptate culpa dolore unde consequuntur nesciunt ex quis hic ullam. Dolor, eveniet
+               architecto laborum tenetur tempore quos perspiciatis modi, sed alias maiores error cum fuga quia
+               eius, obcaecati dolores quaerat assumenda culpa exercitationem. Obcaecati optio consectetur
+               architecto deleniti, modi sapiente esse vero harum possimus molestiae assumenda provident quis
+               ullam. Corporis, laboriosam dicta?</p>
+            <div class="button-link">
+               <button class="btn-left"><a href="https://www.tokopedia.com">Tokopedia</a></button>
+               <button class="btn-right"><a href="https://www.shopee.co.id">Shopee</a></button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <script>
+      function img(anything) {
+         document.querySelector('.slide').src = anything;
+      }
+
+      function change(change) {
+         const line = document.querySelector('.home');
+         line.style.background = change;
+      }
+   </script>
 </body>
+
 </html>
