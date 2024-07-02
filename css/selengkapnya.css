@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(170, 90%, 34%);
+}
+
+.selengkapnya{
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.selengkapnya img{
+    height: auto;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px rgba(0,0,0,0.4);
+}
+
+.text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text p{
+    color: black;
+    text-align: justify;
+    line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .selengkapnya img,
+    .text {
+        width: auto;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .text p {
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .selengkapnya {
+        padding: 30px 0;
+    }
+}
