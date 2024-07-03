@@ -1,64 +1,195 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: hsl(170, 90%, 34%);
+body {
+  background-color: hsl(170, 90%, 34%);
 }
 
-.selengkapnya{
-    width: 100%;
-    padding: 50px 0px;
+.selengkapnya {
+  width: 100%;
+  padding: 50px 0px;
 }
 
-.selengkapnya img{
-    height: auto;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 8px rgba(0,0,0,0.4);
+.heading {
+  text-align: center;
+  padding: 30px 0 10px 0;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 70px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.text{
-    width: 550px;
+.selengkapnya img {
+  height: auto;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
 }
 
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.text {
+  width: 550px;
 }
 
-.text p{
-    color: black;
-    text-align: justify;
-    line-height: 25px;
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.text p {
+  color: black;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.heading-product {
+  text-align: center;
+  font-size: 70px;
+  height: 5px;
+  margin-bottom: -30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px 0 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  width: 300px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 25px;
+  background-color: #fff;
+}
+
+.slide-img {
+  height: 450px;
+  position: relative;
+}
+
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+}
+
+.type a {
+  color: #222222;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+.slide-img:hover .overlay {
+  visibility: visible;
+  animation: fade 1s;
+}
+
+label{
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(72, 113, 97);
+    padding: 3px 13px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.content{
+    display: none;
+}
+
+#ch{
+    display: none;
+}
+
+#ch:checked ~ .content{
+    display: block;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.product-button {
+  padding: 40px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
-    .main {
-        flex-direction: column;
-    }
+  .main {
+    flex-direction: column;
+  }
 
-    .selengkapnya img,
-    .text {
-        width: auto;
-        max-width: 100%;
-        margin: 10px 0;
-    }
+  .selengkapnya img,
+  .text {
+    width: auto;
+    max-width: 100%;
+    margin: 10px 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .text p {
-        line-height: 1.5;
-        padding: 10px;
-    }
+  .text p {
+    line-height: 1.5;
+    padding: 10px;
+  }
 
-    .selengkapnya {
-        padding: 30px 0;
-    }
+  .selengkapnya {
+    padding: 30px 0;
+  }
 }
