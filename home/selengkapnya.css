@@ -16,10 +16,11 @@ body {
 .heading {
   text-align: center;
   padding: 30px 0 10px 0;
-  text-transform: capitalize;
   font-weight: 800;
-  font-size: 70px;
+  font-size: 35px;
+  letter-spacing: 3px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
 }
 
 .selengkapnya img {
@@ -48,126 +49,130 @@ body {
   line-height: 25px;
 }
 
-.heading-product {
+/*  */
+.h1{
+  font-size: 40px;
+  align-items: center;
   text-align: center;
-  font-size: 70px;
-  height: 5px;
-  margin-bottom: -30px;
+  padding-top: 50px;
+  font-weight: 800;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
 }
 
-.slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 100px 0 100px;
+.slide-content {
+  margin: 0 40px;
 }
 
-a {
-  text-decoration: none;
-}
-
-.box {
-  width: 300px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 25px;
+.card {
+  border-radius: 25px;
   background-color: #fff;
+  margin: 50px 0 50px 0;
 }
 
-.slide-img {
-  height: 450px;
-  position: relative;
-}
-
-.slide-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.detail-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.type {
+.image-content,
+.card-content {
   display: flex;
   flex-direction: column;
-}
-
-.type a {
-  color: #222222;
-  margin: 5px 0px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding-right: 8px;
-}
-
-
-.overlay {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
   align-items: center;
+  padding: 10px 14px;
 }
 
-.overlay {
-  visibility: hidden;
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px;
 }
 
-.slide-img:hover .overlay {
-  visibility: visible;
-  animation: fade 1s;
+.overlay img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
 }
 
-label{
-    display: inline-block;
-    cursor: pointer;
-    color: #fff;
-    background-color: rgb(72, 113, 97);
-    padding: 3px 13px;
-    border-radius: 3px;
-    margin-top: 12px;
+.card-image {
+  position: relative;
+  height: 200px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
 }
 
-.content{
-    display: none;
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
 }
 
-#ch{
-    display: none;
+.description {
+  font-size: 14px;
+  color: black;
+  text-align: justify;
 }
 
-#ch:checked ~ .content{
-    display: block;
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3 ease;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 1;
-  }
+.button:hover {
+  background: #02b0e0;
 }
 
-.product-button {
-  padding: 40px;
-  margin-bottom: 50px;
+.extra {
+  display: none;
+}
+
+.card-content p {
+  display: inline;
+}
+
+input[type="checkbox"] {
+  height: 2em;
+  display: block;
+  appearance: none;
+}
+
+label {
+  position: relative;
+  padding: 1em;
+  background: #08eb39;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+input[type="checkbox"]:checked ~ label:before {
+  content: "Read More";
+}
+
+label:before {
+  content: "Read Less";
+}
+
+.dots:has(~ input[type="checkbox"]:checked) {
+  display: none;
+}
+
+.extra:has(~ input[type="checkbox"]:checked) {
+  display: inline;
 }
 
 @media (max-width: 1200px) {
