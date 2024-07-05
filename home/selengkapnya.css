@@ -136,44 +136,44 @@ body {
   background: #02b0e0;
 }
 
-.extra {
+.extra{
   display: none;
 }
 
-.card-content p {
+p{
   display: inline;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]{
   height: 2em;
   display: block;
   appearance: none;
 }
 
-label {
+label{
   position: relative;
   padding: 1em;
-  background: #08eb39;
-  color: #000000;
+  background-color: #000;
+  color: #fff;
   cursor: pointer;
-  font-weight: 700;
 }
 
-input[type="checkbox"]:checked ~ label:before {
+label:before{
   content: "Read More";
 }
 
-label:before {
+input[type="checkbox"]:checked ~ label:before{
   content: "Read Less";
 }
 
-.dots:has(~ input[type="checkbox"]:checked) {
+.dots:has(~ input[type="checkbox"]:checked){
   display: none;
 }
 
-.extra:has(~ input[type="checkbox"]:checked) {
+.extra:has(~ input[type="checkbox"]:checked){
   display: inline;
 }
+
 
 @media (max-width: 1200px) {
   .main {
