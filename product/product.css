@@ -1,268 +1,276 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    background: hsl(170, 90%, 34%);
-  }
-  
-  .container {
-    max-width: 75%;
-    margin: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background: white;
-    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
-  }
-  
-  a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 700;
-    font-style: italic;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: hsl(170, 90%, 34%);
+}
+
+.container {
+  max-width: 75%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: white;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-style: italic;
+}
+.left,
+.right {
+  width: 48%;
+  padding: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.main_image img{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.option {
+  text-align: center;
+  display: flex;
+}
+
+.option img {
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.right {
+  padding: 50px 100px 50px 50px;
+}
+
+h3 {
+  color: #cee16f;
+  margin: 20px 0 20px 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h5,
+p,
+small {
+  color: #837d7c;
+}
+
+h4 {
+  font-weight: 800;
+}
+
+p {
+  margin: 20px 0 20px 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+label,
+.add span,
+.color span {
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
+  margin: 20px 10px 20px 0;
+}
+
+.color span:nth-child(2) {
+  background: #ededed;
+}
+
+.color span:nth-child(3) {
+  background: #d5d6d8;
+}
+
+.color span:nth-child(4) {
+  background: #efe0de;
+}
+
+.color span:nth-child(5) {
+  background: #ab8ed1;
+}
+
+.color span:nth-child(6) {
+  background: #f04d44;
+}
+
+.add label,
+.add span {
+  background: none;
+  border: 1px solid #c1908b;
+  color: #c1908b;
+  text-align: center;
+  line-height: 25px;
+}
+
+.add label {
+  padding: 10px 30px 0 20px;
+  border-radius: 50px;
+  line-height: 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-top: 5%;
+  border-radius: 30px;
+}
+
+.btn-left,
+.btn-right {
+  width: 48.5%;
+  padding: 5px;
+  justify-content: center;
+}
+
+.btn-left {
+  background-color: #ffe788;
+}
+
+.btn-right {
+  background-color: #ffe788;
+}
+
+.tokped {
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  padding: 5px;
+  margin: 0 10px 0 -10px;
+}
+
+.shopee {
+  width: 70px;
+  height: 40px;
+  align-items: center;
+  padding: 2px;
+  margin: 0 0 0 -35px;
+}
+
+.text-buy {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2px;
+}
+
+.button-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn2 {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: rgb(34, 116, 238);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-decrement:hover {
+  background-color: #b6d13b;
+}
+
+.btn-increment:hover {
+  background-color: #b6d13b;
+}
+
+.btn-input {
+  width: 40px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px 1px rgb(27, 101, 238);
+  color: rgb(49, 49, 49);
+  text-align: center;
+}
+
+.total h1 {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: rgb(49, 49, 49);
+  margin: 20px 0px;
+}
+
+.total-price {
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(27, 27, 27);
+  box-shadow: 0px 0px 5px 1px rgb(27, 101, 238);
+  line-height: 30px;
+  padding-left: 15px;
+  padding-top: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
   .left, .right {
-    width: 50%;
-    padding: 50px;
-  }
-
-  .flex {
-    display: flex;
-    justify-content: center;
-  }
-
-  .main_image {
-    width: auto;
-    height: auto;
-    text-align: center;
-  }
-
-  .option{
-    text-align: center;
-    display: flex;
-  }
-  
-  .option img {
-    width: 75px;
-    height: 75px;
-    padding: 10px;
-  }
-  
-  .right {
-    padding: 50px 100px 50px 50px;
-  }
-  
-  h3 {
-    color: #cee16f;
-    margin: 20px 0 20px 0;
-    font-size: 40px;
-    font-weight: 700;
-  }
-  
-  h5,
-  p,
-  small {
-    color: #837D7C;
-  }
-  
-  h4 {
-    font-weight: 800;
-  }
-  
-  p {
-    margin: 20px 0 20px 0;
-    line-height: 25px;
-    text-align: justify;
-  }
-  
-  h5 {
-    font-size: 15px;
-  }
-  
-  label,
-  .add span,
-  .color span {
-    width: 25px;
-    height: 25px;
-    background: #000;
-    border-radius: 50%;
-    margin: 20px 10px 20px 0;
-  }
-  
-  .color span:nth-child(2) {
-    background: #EDEDED;
-  }
-  
-  .color span:nth-child(3) {
-    background: #D5D6D8;
-  }
-  
-  .color span:nth-child(4) {
-    background: #EFE0DE;
-  }
-  
-  .color span:nth-child(5) {
-    background: #AB8ED1;
-  }
-  
-  .color span:nth-child(6) {
-    background: #F04D44;
-  }
-  
-  .add label,
-  .add span {
-    background: none;
-    border: 1px solid #C1908B;
-    color: #C1908B;
-    text-align: center;
-    line-height: 25px;
-  }
-  
-  .add label {
-    padding: 10px 30px 0 20px;
-    border-radius: 50px;
-    line-height: 0;
-  }
-  
-  .btn {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-    color: white;
-    margin-top: 5%;
-    border-radius: 30px;
-  }
-
-  .btn-left, .btn-right{
-    width: 48.5%;
-    padding: 5px;
-  }
-
-  .btn-left{
-    background-color: #ffe788;
-  }
-
-  .btn-right{
-    background-color: #ffe788;
-  }
-
-  .tokped{
-    width: 35px;
-    height: 35px;
-    align-items: center;
-    padding: 5px;
-    margin: 0 10px 0 -10px;
-  }
-
-  .shopee{
-    width: 70px;
-    height: 40px;
-    align-items: center;
-    padding: 2px;
-    margin: 0 0 0 -35px;
-  }
-
-  .text-buy{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 2px;
-  }
-
-  .button-link{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .btn2{
-    width: 30px;
-    height: 30px;
-    outline: none;
-    border: none;
-    background-color: rgb(34,116,238);
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 15px;
-  }
-
-  .btn-decrement:hover{
-    background-color: #b6d13b;
-  }
-
-  .btn-increment:hover{
-    background-color: #b6d13b;
-  }
-
-  .btn-input{
-    width: 40px;
-    height: 30px;
-    outline: none;
-    border: none;
-    font-weight: 600;
-    box-shadow: 0px 0px 5px 1px rgb(27, 101, 238);
-    color: rgb(49,49,49);
-    text-align: center;
-  }
-
-  .total h1{
-    font-size: 15px;
-    text-transform: capitalize;
-    color: rgb(49,49,49);
-    margin: 20px 0px;
-  }
-
-  .total-price{
-    width: 200px;
-    height: 30px;
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(27,27,27);
-    box-shadow: 0px 0px 5px 1px rgb(27,101, 238);
-    line-height: 30px;
-    padding-left: 15px;
-    padding-top: 0px;
-  }
-
-  @media only screen and (max-width:768px) {
-    .container {
-      max-width: 90%;
-      margin: auto;
-      height: auto;
-    }
-  
-    .left, .right {
       width: 100%;
-    }
-  
-    .container {
-      flex-direction: column;
-    }
+      padding: 20px; 
   }
-  
-  @media only screen and (max-width:511px) {
-    .container {
-      max-width: 100%;
-      height: auto;
-      padding: 10px;
-    }
-  
-    .left, .right {
-      padding: 0;
-    }
-  
-    img {
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+      max-width: 90%; 
+  }
+
+  .main_image img, .option img {
       width: 100%;
-      height: 100%;
-    }
-  
-    .option {
+      height: auto; 
+  }
+
+  .option {
       display: flex;
-      flex-wrap: wrap;
-    }
+      flex-wrap: wrap; 
   }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+      max-width: 100%;
+      padding: 10px; 
+  }
+
+  .left, .right {
+      padding: 0; 
+  }
+
+  .option {
+      display: flex;
+      flex-wrap: wrap; 
+  }
+}
