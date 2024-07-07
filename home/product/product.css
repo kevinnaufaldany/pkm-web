@@ -50,8 +50,8 @@
 }
 
 body {
-  font-family: sans-serif;
-  background: hsl(170, 90%, 34%);
+  font-family: var(--body-font);
+  background: var(--first-color-dark)
 }
 
 .container {

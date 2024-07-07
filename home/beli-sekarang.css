@@ -47,11 +47,15 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: var(--body-font);
+}
+
+p{
+    font-family: var(--body-font);
 }
 
 body{
-    background-color: hsl(170, 90%, 34%);
+    background-color: var(--first-color-dark)
 }
 
 .card-container{
