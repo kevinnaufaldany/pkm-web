@@ -50,7 +50,7 @@
 }
 
 body {
-  background-color: var(--first-color-dark)
+  background-color: var(--first-color-dark);
 }
 
 p{
