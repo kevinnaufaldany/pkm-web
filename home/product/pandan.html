@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Pandan</title>
+   <link rel="shortcut icon" href="asset/icon.png" type="image/x-icon">
+   <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+   <section>
+      <div class="container flex">
+         <div class="left">
+            <div class="main_image">
+               <img src="/asset/products/kemasan-pandan.png" alt="" class="slide">
+            </div>
+            <div class="option flex">
+               <img src="/asset/products/kemasan-pandan.png" onclick="img('/asset/products/kemasan-pandan.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+               <img src="/asset/products/kemasan-purut.png" onclick="img('/asset/products/kemasan-purut.png')">
+            </div>
+         </div>
+         <div class="right">
+            <h3>Hero Mask - Pandan</h3>
+            <h4>Rp8.000</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ipsam temporibus culpa vero laudantium
+               cupiditate ullam facilis. Architecto accusamus consequatur reprehenderit deserunt doloremque ad autem
+               eum, provident error hic vero. Error veniam eaque illum delectus exercitationem! Pariatur quibusdam
+               molestias odit quos dignissimos unde autem praesentium itaque natus illo iusto quis architecto sunt
+               repellendus quo dolor, rerum eum hic obcaecati ea.</p>
+            <div class="btn1">
+               <button class="btn2 decrement">-</button>
+               <input type="text" id="quantity" class="btn-input" value="1" readonly>
+               <button class="btn2 increment">+</button>
+
+               <div class="total">
+                  <h1>Total Harga</h1>
+                  <p class="total-price">
+                     <span>Rp</span>
+                     <span id="price">8000</span>
+                  </p>
+               </div>
+               <script src="product.js"></script>
+            </div>
+            <div class="button-link">
+               <button class="btn btn-left"><a href="https://www.tokopedia.com" class="text-buy"><img src="/asset/properti/tokopedia.png" alt="" class="tokped">Tokopedia</a></button>
+               <button class="btn btn-right"><a href="https://www.shopee.co.id" class="text-buy"><img src="/asset/properti/shopee.png" alt="" class="shopee">Shopee</a></button>
+            </div>
+         </div>
+      </div>
+   </section>
+</body>
+
+</html>

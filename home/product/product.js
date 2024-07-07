@@ -18,13 +18,13 @@ let totalcount = document.querySelector("#price");
 increment.addEventListener("click", () => {
   let add = ++valueCount;
   count.value = add;
-  totalcount.innerHTML = add * 100000;
+  totalcount.innerHTML = add * 8000;
 });
 
 decrement.addEventListener("click", () => {
   if (valueCount >= 2) {
     let sub = --valueCount;
     count.value = sub;
-    totalcount.innerHTML = sub * 100000;
+    totalcount.innerHTML = sub * 8000;
   }
 });
