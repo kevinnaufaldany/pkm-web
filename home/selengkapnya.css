@@ -98,6 +98,11 @@ p{
   line-height: 25px;
 }
 
+.text h2{
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
 
 .slider-produk{
   margin: 0 10px 50px 10px;
