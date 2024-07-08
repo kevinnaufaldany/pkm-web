@@ -122,7 +122,7 @@ img {
   left: 0;
   background-color:var(--first-color-dark);
   z-index: var(--z-fixed);
-  transition: box-shadow .4s;
+  transition: box-shadow .4s; 
 }
 
 .nav{
