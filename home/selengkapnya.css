@@ -214,6 +214,10 @@ p{
 
 .slider-produk{
   margin: 0 10px 50px 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .h1{
@@ -226,14 +230,19 @@ p{
   /* font-style: italic; */
 }
 
-.container-slide-content{
+.slider-produk .container-slide-content{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1200px;
   flex-wrap: wrap;
-  padding: 0 20px;
+  /* padding: 0 20px; */
+  overflow-x: clip;
+  justify-self: center;
+  /* max-width: 600px;
+  overflow-x: clip;
+  justify-self: center; */
 }
 
 .container{
