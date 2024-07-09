@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Kanit:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Kanit:wght@400;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -14,25 +14,24 @@
   --second-color: rgba(255, 231, 135, 1);
   --second-color-dark: rgba(52, 47, 41, 1);
   --white-color: hsl(0, 0%, 100%);
-  --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, .4));
+  --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, 0.4));
   /* --shadow-circle: 0 12px 24px hsla(0, 0%, 0%, .4); */
-  --shadow-button: 0 -4px 8px hsla(0, 0%, 0%, .3);
-  --shadow-card: 0 -8px 24px hsla(0, 0%, 0%, .3);
+  --shadow-button: 0 -4px 8px hsla(0, 0%, 0%, 0.3);
+  --shadow-card: 0 -8px 24px hsla(0, 0%, 0%, 0.3);
   --shadow-text: 0 2px 4px var(--first-color-darken);
-  
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
 
-  --body-font: "Kanit", sans-serif; 
+  --body-font: "Kanit", sans-serif;
   --second-font: "Merriweather", sans-serif;
 
   --biggest-font-size: 3.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -53,29 +52,29 @@ body {
   background-color: var(--first-color-dark);
 }
 
-p{
+p {
   font-family: var(--body-font);
 }
 
-.header{
+.header {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color:var(--first-color-dark);
+  background-color: var(--first-color-dark);
   z-index: var(--z-fixed);
-  transition: box-shadow .4s;
+  transition: box-shadow 0.4s;
 }
 
-.nav{
+.nav {
   position: relative;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
 }
 
-.nav__logo{
+.nav__logo {
   width: 40px;
   /* color: var(--white-color);
   font-family: var(--second-font);
@@ -83,7 +82,7 @@ p{
 }
 
 .nav__close,
-.nav__toggle{
+.nav__toggle {
   display: flex;
   font-size: 1.5rem;
   cursor: pointer;
@@ -91,7 +90,7 @@ p{
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
-  .nav__menu{
+  .nav__menu {
     position: fixed;
     left: -100%;
     top: 0;
@@ -103,65 +102,64 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: left .4s;
+    transition: left 0.4s;
   }
-
 }
 
 .nav__list,
-.nav__social{
+.nav__social {
   display: flex;
 }
 
-.nav__list{
+.nav__list {
   flex-direction: column;
   row-gap: 3rem;
 }
 
-.nav__link{
+.nav__link {
   color: var(--white-color);
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
-.nav__link:hover{
+.nav__link:hover {
   color: var(--second-color);
 }
 
-.nav__close{
+.nav__close {
   position: absolute;
   top: 1.15rem;
   right: 1.5rem;
 }
 
-.nav__social{
+.nav__social {
   column-gap: 1rem;
   align-self: flex-end;
 }
 
-.nav__social-link{
+.nav__social-link {
   color: var(--white-color);
   font-size: 1.5rem;
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
-.nav__social-link:hover{
-  color: var(--second-color)
+.nav__social-link:hover {
+  color: var(--second-color);
 }
 /* Show menu */
-.show-menu{
+.show-menu {
   left: 0;
 }
 
 /* Shadow header */
-.shadow-header{
-  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .15);
+.shadow-header {
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.15);
 }
 
 /* Active link */
-.active-link{
- color: var(--second-color); 
+.active-link {
+  color: var(--second-color);
 }
 
 .selengkapnya {
@@ -206,13 +204,13 @@ p{
   line-height: 25px;
 }
 
-.text h2{
+.text h2 {
   font-weight: bold;
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
-.slider-produk{
+.slider-produk {
   margin: 0 10px 50px 10px;
   justify-content: center;
   align-items: center;
@@ -220,7 +218,7 @@ p{
   flex-wrap: wrap;
 }
 
-.h1{
+.h1 {
   font-size: 40px;
   align-items: center;
   text-align: center;
@@ -230,22 +228,18 @@ p{
   /* font-style: italic; */
 }
 
-.slider-produk .container-slide-content{
+.slider-produk .container-slide-content {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1200px;
   flex-wrap: wrap;
-  /* padding: 0 20px; */
   overflow-x: clip;
   justify-self: center;
-  /* max-width: 600px;
-  overflow-x: clip;
-  justify-self: center; */
 }
 
-.container{
+.container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -254,17 +248,17 @@ p{
   flex-wrap: wrap;
 }
 
-.container .card{
+.container .card {
   position: relative;
   width: 300px;
   padding: 20px;
   margin: 20px;
-  background: #CEE16F;
+  background: #cee16f;
   border-radius: 20px;
 }
 
-.container .card::before{
-  content: '';
+.container .card::before {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -273,12 +267,12 @@ p{
   border-right: 20px solid #17e78c;
 }
 
-.container .card.acive::before{
+.container .card.acive::before {
   border-top: 20px solid #ffe788;
   border-right: 20px solid #ffe788;
 }
 
-.container .card .icon img{
+.container .card .icon img {
   margin-bottom: 10px;
   position: absolute;
   left: 0;
@@ -297,7 +291,7 @@ p{
   padding-bottom: 25px;
 }
 
-.overlay img{
+.overlay img {
   position: absolute;
   left: 0;
   top: 0;
@@ -308,22 +302,22 @@ p{
   object-fit: cover;
 }
 
-.container .card .icon img{
+.container .card .icon img {
   max-width: 90px;
 }
 
-.container .card .content{
+.container .card .content {
   position: relative;
   height: 215px;
   overflow: hidden;
 }
 
-.container .card.active .content{
+.container .card.active .content {
   height: auto;
 }
 
-.container .card .content::before{
-  content: '';
+.container .card .content::before {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -332,24 +326,24 @@ p{
   /* background: linear-gradient(transparent, #3f3f3f); */
 }
 
-.container .card.active .content::before{
+.container .card.active .content::before {
   display: none;
 }
 
-.container .card .content h3{
+.container .card .content h3 {
   color: #fff;
   font-size: 1.4em;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.container .card .content p{
+.container .card .content p {
   font-weight: 400;
   text-align: justify;
   font-size: 18px;
 }
 
-.container .card .more{
+.container .card .more {
   position: relative;
   padding: 10px 15px;
   background: #17e78c;
@@ -363,43 +357,98 @@ p{
   font-size: 14px;
 }
 
-.container .card.active .more{
+.container .card.active .more {
   background: #ffe788;
   color: #000000;
 }
 
-.container .card .more::before{
-  content: 'Read More';
+.container .card .more::before {
+  content: "Read More";
 }
 
-.container .card.active .more::before{
-  content: 'Read Less';
+.container .card.active .more::before {
+  content: "Read Less";
 }
-
 
 @media (max-width: 1200px) {
+  .scrollup {
+    right: 3rem;
+  }
+
+  .selengkapnya {
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .slider-produk {
+    position: absolute;
+    max-width: 600px;
+  }
+
+  .selengkapnya img {
+    max-width: 100%;
+  }
+  .selengkapnya .text {
+    padding: 10px;
+  }
+
+  .selengkapnya .main {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {
   .card {
-      width: calc(100% / 2 - 20px);
+    width: 100%;
+  }
+
+  .scrollup {
+    right: 3rem;
   }
 }
 
 @media (max-width: 768px) {
   .card {
-      width: 100%;
+    width: 100%;
   }
 
   .selengkapnya .main {
-      flex-direction: column;
+    flex-direction: column;
   }
+}
+
+@media (max-width: 768px) {
+  .scrollup {
+    right: 3rem;
+  }   
 }
 
 @media (max-width: 576px) {
   .selengkapnya .text {
-      padding: 10px;
+    padding: 10px;
   }
 
   .selengkapnya img {
-      max-width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+  .nav__menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background-color: var(--first-color-dark);
+    backdrop-filter: blur(10px);
+    width: 40%;
+    height: 100%;
+    padding: 7rem 1.5rem 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: left .4s;
   }
 }
 
