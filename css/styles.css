@@ -110,6 +110,7 @@ img {
   text-shadow: var(--shadow-text);
 }
 
+
 .main {
   overflow: hidden;
 }
@@ -365,7 +366,6 @@ img {
 .favorites__data{
   position: relative;
   text-align: center;
-  margin-top: -5rem;
 }
 
 .favorites__cheese-1,
@@ -911,7 +911,6 @@ img {
   }
   .section__title{
     margin-bottom: 2rem;
-    margin-top: 5rem;
   }
 
   .nav{
