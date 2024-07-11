@@ -333,16 +333,18 @@ p {
 
 .container .card .more {
   position: relative;
-  padding: 10px 15px;
+  padding: 5px 10px;
   background: #17e78c;
   margin-top: 15px;
   display: inline-block;
   cursor: pointer;
   text-transform: uppercase;
   color: #383838;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 2px;
-  font-size: 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .container .card.active .more {
@@ -356,6 +358,18 @@ p {
 
 .container .card.active .more::before {
   content: "Read Less";
+}
+
+.link{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-style: italic;
+  margin-left: 10px;
 }
 
 @media (max-width: 1200px) {
