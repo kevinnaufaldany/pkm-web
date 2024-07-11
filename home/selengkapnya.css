@@ -359,72 +359,50 @@ p {
 }
 
 @media (max-width: 1200px) {
-  .scrollup {
-    right: 3rem;
+  .container-slide-content {
+    width: 100%;
   }
 
-  .selengkapnya {
-    align-items: center;
-    justify-content: center;
-
+  .container .card {
+    max-width: 280px;
   }
+}
 
-  .slider-produk {
-    position: absolute;
-    max-width: 600px;
+@media (max-width: 992px) {
+  .container .card {
+    max-width: 45%;
   }
+}
 
-  .selengkapnya img {
+@media (max-width: 768px) {
+  .container .card {
     max-width: 100%;
   }
-  .selengkapnya .text {
-    padding: 10px;
-  }
-
-  .selengkapnya .main {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1200px) {
-  .card {
-    width: 100%;
-  }
-
-  .scrollup {
-    right: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: 100%;
-  }
-
-  .selengkapnya .main {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .scrollup {
-    right: 3rem;
-  }   
 }
 
 @media (max-width: 576px) {
-  .selengkapnya .text {
-    padding: 10px;
+  .h1 {
+    font-size: 32px;
+    padding-top: 30px;
   }
 
-  .selengkapnya img {
-    max-width: 100%;
+  .container .card {
+    margin: 10px;
+    padding: 15px;
   }
 
+  .container .card .content p {
+    font-size: 16px;
+  }
+
+  .container .card .more {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 }
 
-@media screen and (max-width: 1150px) {
-  .nav__menu{
+@media (max-width: 1150px) {
+  .nav__menu {
     position: fixed;
     left: -100%;
     top: 0;
@@ -440,3 +418,24 @@ p {
   }
 }
 
+@media (max-width: 1690px) {
+  footer {
+    padding: 50px 5% 40px;
+  }
+}
+
+@media (max-width: 1120px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 2.5rem;
+  }
+}
