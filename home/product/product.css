@@ -120,7 +120,8 @@ small {
 }
 
 h4 {
-  font-weight: 800;
+  font-weight: 1000;
+  color: var(--first-color);
 }
 
 .right-content {
