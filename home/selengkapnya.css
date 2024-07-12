@@ -333,7 +333,7 @@ p {
 
 .container .card .more {
   position: relative;
-  padding: 5px 10px;
+  padding: 10px 20px;
   background: #17e78c;
   margin-top: 15px;
   display: inline-block;
@@ -343,7 +343,7 @@ p {
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 50px;
-  font-size: 13px;
+  font-size: 10px;
   margin-bottom: 10px;
 }
 
@@ -369,7 +369,7 @@ p {
   letter-spacing: 2px;
   font-size: 13px;
   font-style: italic;
-  margin-left: 10px;
+  margin-left: 10px;  
 }
 
 @media (max-width: 1200px) {
