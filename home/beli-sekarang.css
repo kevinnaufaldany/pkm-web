@@ -58,7 +58,9 @@ body{
     background-color: var(--first-color-dark)
 }
 
-
+h1{
+    color: #666;
+}
 
 .card-container{
     display: flex;
