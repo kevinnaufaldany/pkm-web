@@ -448,7 +448,7 @@ p {
 /* ========== RESPONISVE SLIDER CARD ARTICLE ========== */
 @media (max-width: 1200px) {
   .slider-produk .container-slide-content {
-    width: 100%;
+    width: 90%;
   }
 
   .container .card {
@@ -464,7 +464,7 @@ p {
 
 @media (max-width: 768px) {
   .container .card {
-    width: 100%;
+    width: 50%;
   }
 
   .slider-produk {
