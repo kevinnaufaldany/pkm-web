@@ -433,7 +433,7 @@ p {
   content: "Read Less";
 }
 
-.link{
+.link {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -450,7 +450,7 @@ p {
   .slider-produk .container-slide-content {
     width: 100%;
   }
-  
+
   .container .card {
     width: 45%;
   }
@@ -516,7 +516,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: left .4s;
+    transition: left 0.4s;
   }
 }
 
