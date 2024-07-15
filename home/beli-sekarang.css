@@ -114,3 +114,20 @@ h1{
     border-radius: 5px;
     padding: 8px 16px;
 }
+
+.scrollup-selengkapnya {
+    position: fixed;
+    right: 3rem;
+    bottom: 40px;
+    background-color: var(--first-color-dark);
+    color: var(--white-color);
+    box-shadow: inset var(--shadow-button);
+    display: inline-flex;
+    padding: 6px;
+    font-size: 1.25rem;
+    border-radius: 0.25rem;
+    z-index: var(--z-tooltip);
+    transition: bottom 0.4s, transform 0.4s;
+    width: 35px;
+    height: 35px;
+  }

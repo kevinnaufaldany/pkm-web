@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Kanit:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Kanit:wght@400;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -14,25 +14,23 @@
   --second-color: rgba(255, 231, 135, 1);
   --second-color-dark: rgba(52, 47, 41, 1);
   --white-color: hsl(0, 0%, 100%);
-  --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, .4));
-  /* --shadow-circle: 0 12px 24px hsla(0, 0%, 0%, .4); */
-  --shadow-button: 0 -4px 8px hsla(0, 0%, 0%, .3);
-  --shadow-card: 0 -8px 24px hsla(0, 0%, 0%, .3);
+  --shadow-img: drop-shadow(0 12px 24px hsla(0, 0%, 0%, 0.4));
+  --shadow-button: 0 -4px 8px hsla(0, 0%, 0%, 0.3);
+  --shadow-card: 0 -8px 24px hsla(0, 0%, 0%, 0.3);
   --shadow-text: 0 2px 4px var(--first-color-darken);
-  
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
 
-  --body-font: "Kanit", sans-serif; 
+  --body-font: "Kanit", sans-serif;
   --second-font: "Merriweather", sans-serif;
 
   --biggest-font-size: 3.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -51,7 +49,7 @@
 
 body {
   font-family: var(--body-font);
-  background: var(--first-color-dark)
+  background: var(--first-color-dark);
 }
 
 .container-product {
@@ -63,8 +61,8 @@ body {
   box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 a {
@@ -73,6 +71,7 @@ a {
   font-weight: 700;
   font-style: italic;
 }
+
 .left,
 .right {
   width: 48%;
@@ -84,7 +83,7 @@ a {
   justify-content: center;
 }
 
-.main_image img{
+.main_image img {
   width: 100%;
   height: auto;
   text-align: center;
@@ -93,11 +92,13 @@ a {
 .option {
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .option img {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   padding: 10px;
   cursor: pointer;
 }
@@ -283,41 +284,100 @@ label,
   padding-top: 0px;
 }
 
-@media only screen and (max-width: 1200px) {
-  .left, .right {
-      width: 100%;
-      padding: 20px; 
+.scrollup-selengkapnya {
+  position: fixed;
+  right: 3rem;
+  bottom: 40px;
+  background-color: var(--first-color-dark);
+  color: var(--white-color);
+  box-shadow: inset var(--shadow-button);
+  display: inline-flex;
+  padding: 6px;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  transition: bottom 0.4s, transform 0.4s;
+  width: 35px;
+  height: 35px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .container-product {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    width: 90%;
+    padding: 20px;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .container {
-      max-width: 90%; 
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 30px;
   }
 
-  .main_image img, .option img {
-      width: 100%;
-      height: auto; 
+  h4 {
+    font-size: 20px;
   }
 
-  .option {
-      display: flex;
-      flex-wrap: wrap; 
+  .main_image img {
+    width: 100%;
+  }
+
+  .option img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .button-link {
+    flex-direction: column;
+  }
+
+  .btn-left,
+  .btn-right {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .container {
-      max-width: 100%;
-      padding: 10px; 
+@media screen and (max-width: 480px) {
+  .btn-left,
+  .btn-right {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
-  .left, .right {
-      padding: 0; 
+  .option img {
+    width: 50px;
+    height: 50px;
   }
 
-  .option {
-      display: flex;
-      flex-wrap: wrap; 
+  .tokped,
+  .shopee {
+    width: 30px;
+    height: 30px;
+  }
+
+  .text-buy {
+    font-size: 12px;
+  }
+
+  .total h1 {
+    font-size: 12px;
+  }
+
+  .total-price {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .btn2 {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
   }
 }
