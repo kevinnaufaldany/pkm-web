@@ -56,7 +56,6 @@ p {
   font-family: var(--body-font);
 }
 
-
 /* ========== SELENGKAPNYA ========== */
 .selengkapnya {
   width: 100%;
@@ -127,21 +126,19 @@ p {
   height: 35px;
 }
 
-
 /* ========== RESPONSIVE SELENGKAPNYA ==========*/
 @media (max-width: 1200px) {
   .text {
     width: 80%;
   }
 
-  .gotop .fa-arrow-up{
+  .gotop .fa-arrow-up {
     right: 2em;
     width: 10px;
     height: 10px;
     text-align: center;
   }
 }
-
 
 @media (max-width: 992px) {
   .text {

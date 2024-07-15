@@ -685,8 +685,6 @@ footer {
   transform: translateY(-3px) translateX(-5px);
 }
 
-
-
 /* RESPONSIVE FOOTER */
 @media (max-width: 1690px) {
   footer {
