@@ -99,7 +99,7 @@ img {
 }
 
 .section {
-  padding-block: 5rem 1rem;
+  padding-block: 2rem 1rem;
 }
 
 .section__title {
@@ -230,7 +230,7 @@ img {
 }
 
 .home__container {
-  padding-top: 1.5rem;
+  margin-top: 5rem;
   justify-content: center;
   row-gap: 4rem;
 }
@@ -685,6 +685,23 @@ footer {
   transform: translateY(-3px) translateX(-5px);
 }
 
+.icon-shopee{
+  width: 100px;
+  height: 100px;
+  /* margin-left: -100px; */
+}
+
+.icon-tokopedia{
+  width: 40px;
+  height: 40px;
+  margin-top: -50px;
+  margin-left: 20px;
+}
+
+.icons{
+  margin-left: -30px;
+}
+
 /* RESPONSIVE FOOTER */
 @media (max-width: 1690px) {
   footer {
@@ -811,7 +828,7 @@ footer {
   }
 
   .home__container {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .home__circle {
@@ -863,7 +880,8 @@ footer {
   }
 
   .home__container {
-    margin-top: 100px;
+    margin-top: 80px;
+    
   }
 
   .home__circle {
@@ -959,7 +977,7 @@ footer {
     grid-template-columns: 420px 585px;
     align-items: center;
     column-gap: 6rem;
-    padding-top: 5rem;
+  
   }
   .home__data {
     text-align: initial;
