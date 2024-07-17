@@ -148,7 +148,8 @@ img {
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px) {
-  .nav__menu {
+  .
+   {
     position: fixed;
     right: -100%;
     top: 0;
@@ -156,7 +157,7 @@ img {
     backdrop-filter: blur(10px);
     width: 40%;
     height: 100%;
-    padding: 7rem 1.5rem 2.5rem 3rem;
+    padding: 7rem 5rem 2.5rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
