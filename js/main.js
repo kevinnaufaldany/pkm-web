@@ -91,6 +91,6 @@ sr.reveal('.home__aloe-1, .home__aloe-2, .home__snow', {delay: 1000, interval: 1
 sr.reveal('.home__pandan', {delay: 1200})
 sr.reveal('.home__jeruk-1, .home__jeruk-2', {delay: 1400, interval: 100})
 sr.reveal('.care__img, .contact__img', {origin: 'left'})
-sr.reveal('.care__list, .contact__data', {origin: 'right'})
-sr.reveal('.banner__item, .products__card', {interval: 100})
+sr.reveal('.care__list, .contact', {origin: 'right'})
+sr.reveal('.banner__item, .products', {interval: 100})
 

@@ -291,7 +291,7 @@ img {
 }
 
 .home__images img {
-  width: 60px;
+  width: 45px;
   filter: var(--shadow-img);
   position: absolute;
 }
@@ -843,11 +843,11 @@ footer {
   }
   .home__images,
   .home__img {
-    width: 250px;
+    width: 190px;
     margin-bottom: 50px;
   }
   .home__images img {
-    width: 95px;
+    width: 75px;
   }
 
   .favorites__swiper {
@@ -897,12 +897,12 @@ footer {
   }
   .home__images,
   .home__img {
-    width: 250px;
+    width: 190px;
     display: flex;
     align-items: center;
   }
   .home__images img {
-    width: 95px;
+    width: 80px;
   }
 
   .favorites__swiper {
@@ -1014,7 +1014,7 @@ footer {
   }
   .home__images,
   .home__img {
-    width: 250px;
+    width: 335px;
   }
   .home__images img {
     width: 95px;
