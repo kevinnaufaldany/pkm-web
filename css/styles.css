@@ -806,6 +806,38 @@ footer {
   .contact__content {
     margin-bottom: 5rem;
   }
+  .home__images img{
+    width: 38px;
+  }
+
+  .home__jeruk-1{
+    left: 6rem;
+    top: 0.5rem;
+  }
+  
+  .home__aloe-2{
+    top: -0.2rem;
+    left: 1rem;
+  }
+  .home__aloe-1{
+    top: 5rem;
+    left: 6.7rem;
+  }
+  
+  .home__jeruk-2{
+    left: 2rem;
+    bottom: 0.1rem;
+  }
+
+  .home__snow{
+    left: 5.5rem;
+    bottom: -0.5rem;
+  }
+
+  .home__pandan{
+    top: 3.5rem;
+    left: 0.2rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -817,7 +849,59 @@ footer {
     font-size: var(--h2-font-size);
     margin-top: 3rem;
   }
+
+  .home__title h1 {
+    font-size: 3rem;
+    /* margin-top: 100px; */
+  }
+  .home__buttons {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .home__circle {
+    width: 150px;
+    height: 150px;
+  }
+  .home__subcircle {
+    width: 200px;
+    height: 200px;
+  }
+  .home__images .home__img {
+    width: 125px;
+  }
   
+    .home__images img{
+    width: 38px;
+  }
+
+  .home__jeruk-1{
+    left: 6.5rem;
+    top: 0rem;
+  }
+  
+  .home__aloe-2{
+    top: -0.8rem;
+    left: 1rem;
+  }
+  .home__aloe-1{
+    top: 5rem;
+    left: 7.5rem;
+  }
+  
+  .home__jeruk-2{
+    left: 2rem;
+    bottom: -0.5rem;
+  }
+
+  .home__snow{
+    left: 5.5rem;
+    bottom: -0.8rem;
+  }
+
+  .home__pandan{
+    top: 3.5rem;
+    left: -0.2rem;
+  }
 }
 
 /* For medium devices */
@@ -870,6 +954,38 @@ footer {
 
   .section__title h2 {
     margin-top: 5rem;
+  }
+  
+  .home__images img{
+    width: 70px;
+  }
+
+  .home__jeruk-1{
+    left: 8rem;
+    top: 1rem;
+  }
+  
+  .home__aloe-2{
+    top: 1rem;
+  }
+  .home__aloe-1{
+    top: 9rem;
+    left: 9.5rem;
+    
+  }
+  
+  .home__jeruk-2{
+    left: -0.5rem;
+    bottom: 3.9rem;
+  }
+
+  .home__snow{
+    bottom: 3rem;
+  }
+
+  .home__pandan{
+    top: 7rem;
+    left: -1.9rem;
   }
 }
 
@@ -926,6 +1042,29 @@ footer {
   .section__title h2 {
     margin-top: 5rem;
   }
+
+  
+  .home__images img{
+    width: 70px;
+  }
+
+  .home__jeruk-1{
+    left: 8rem;
+    top: 2rem;
+  }
+  
+  .home__aloe-2{
+    top: 1.5rem;
+  }
+  
+  .home__jeruk-2{
+    left: -0.5rem;
+    bottom: 2rem;
+  }
+
+  .home__snow{
+    bottom: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -937,6 +1076,27 @@ footer {
   .contact {
     grid-template-columns: 550px;
     padding-top: 3rem;
+  }
+  .home__images img{
+    width: 70px;
+  }
+
+  .home__jeruk-1{
+    left: 8rem;
+    top: 2rem;
+  }
+  
+  .home__aloe-2{
+    top: 1.5rem;
+  }
+  
+  .home__jeruk-2{
+    left: -0.5rem;
+    bottom: 2rem;
+  }
+
+  .home__snow{
+    bottom: 1.5rem;
   }
 }
 
@@ -1159,5 +1319,9 @@ footer {
 
   .scrollup {
     right: 3rem;
+  }
+
+  .home__jeruk-1{
+    left: 16rem;
   }
 }
