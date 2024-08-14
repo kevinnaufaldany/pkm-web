@@ -51,7 +51,7 @@ const scrollUp = () =>{
 	this.scrollY >= 150 ? scrollUp.classList.add('show-scroll')
 						: scrollUp.classList.remove('show-scroll')
                         
-    scrollUp.classList.add('show-scroll')
+    // scrollUp.classList.add('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
@@ -85,7 +85,7 @@ const sr = ScrollReveal({
     reset: true, //loop animasi
 })
 
-sr.reveal('.home__data, .favorites__container, .footer__container')
+sr.reveal('.home__data, .favorites__container, .footer__container, .section__title')
 sr.reveal('.home__circle, .home__img', {delay: 600, scale: .5})
 sr.reveal('.home__aloe-1, .home__aloe-2, .home__snow', {delay: 1000, interval: 100})
 sr.reveal('.home__pandan', {delay: 1200})
@@ -93,4 +93,6 @@ sr.reveal('.home__jeruk-1, .home__jeruk-2', {delay: 1400, interval: 100})
 sr.reveal('.care__img, .contact__img', {origin: 'left'})
 sr.reveal('.care__list, .contact', {origin: 'right'})
 sr.reveal('.banner__item, .products', {interval: 100})
+
+
 
