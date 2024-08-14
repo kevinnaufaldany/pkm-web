@@ -8,9 +8,9 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: rgba(206, 225, 110, 1);
-  --first-color-dark: rgba(107, 207, 75, 1);
+  --first-color-dark: #85A236;
   --first-color-darken: rgba(66, 95, 49, 1);
-  --first-color-darken2: rgb(75, 139, 1);
+  --first-color-darken2: #586c23;
   --second-color: rgba(255, 231, 135, 1);
   --second-color-dark: rgba(52, 47, 41, 1);
   --white-color: hsl(0, 0%, 100%);
@@ -729,10 +729,10 @@ footer {
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: rgb(75, 139, 1);
+  background-color: #44541A;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(75, 179, 40);
+  background-color: #7b9631;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(66, 95, 49, 1);
