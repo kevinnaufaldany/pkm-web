@@ -8,9 +8,9 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: rgba(206, 225, 110, 1);
-  --first-color-dark: rgba(107, 207, 75, 1);
+  --first-color-dark: #85A236;
   --first-color-darken: rgba(66, 95, 49, 1);
-  --first-color-darken2: rgb(75, 139, 1);
+  --first-color-darken2: #586c23;
   --second-color: rgba(255, 231, 135, 1);
   --second-color-dark: rgba(52, 47, 41, 1);
   --white-color: hsl(0, 0%, 100%);
@@ -326,12 +326,12 @@ p {
 .container .card .more {
   position: relative;
   padding: 10px 20px;
-  background: #17e78c;
+  background: var(--first-color-dark);
   margin-top: 15px;
   display: inline-block;
   cursor: pointer;
   text-transform: uppercase;
-  color: #383838;
+  color: #ffffff;
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 50px;
